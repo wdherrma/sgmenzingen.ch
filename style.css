@@ -1,0 +1,13 @@
+/* style.css */
+:root{
+  --accent: #111827; /* dunkel */
+  --muted: #6b7280;
+  --bg: #f8fafc;
+}
+body { background: var(--bg); color: #0f172a; }
+.bg-gradient-dark {
+  background: linear-gradient(180deg,#0f172a,#111827);
+}
+h1,h2,h3 { color: #0b1220; }
+.card-title { color: var(--accent); }
+.navbar-brand { letter-spacing: 0.6px; font-weight:700; }
