@@ -1,0 +1,1 @@
+# sgmenzingen.ch
