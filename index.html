@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Schützengesellschaft Menzingen</title>
+
+  <!-- Bootstrap 5 CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Optional: Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Schützengesellschaft Menzingen – Sturmgewehr & Luftgewehr. Training, Vereinsanlässe und Kontakt.">
+</head>
+<body class="bg-light text-dark" style="font-family: 'Montserrat', sans-serif;">
+
+  <!-- NAV -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">SG Menzingen</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">Über uns</a></li>
+          <li class="nav-item"><a class="nav-link" href="#disciplines">Disziplinen</a></li>
+          <li class="nav-item"><a class="nav-link" href="#media">Video</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="py-5 bg-gradient-dark text-white">
+    <div class="container text-center py-5">
+      <h1 class="display-5 fw-bold">Schützengesellschaft Menzingen</h1>
+      <p class="lead mb-4">Sturmgewehr & Luftgewehr – Tradition, Präzision und Kameradschaft</p>
+      <a href="#contact" class="btn btn-outline-light btn-lg">Kontakt & Probetraining</a>
+    </div>
+  </header>
+
+  <main class="container my-5">
+
+    <!-- Über uns -->
+    <section id="about" class="mb-5">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h2 class="fw-semibold">Über uns</h2>
+          <p>Die Schützengesellschaft Menzingen fördert den Schießsport in kameradschaftlicher Atmosphäre. Wir bieten strukturierte Trainings für Einsteiger und Fortgeschrittene, sicherheits- und regelbewusst.</p>
+          <ul>
+            <li>Regelmässiges Training</li>
+            <li>Jugendarbeit & Einführungen</li>
+            <li>Clubanlässe & Wettkämpfe</li>
+          </ul>
+        </div>
+        <div class="col-lg-6 text-center">
+          <!-- Platzhalterbild -->
+          <img src="https://via.placeholder.com/700x420?text=SG+Menzingen" class="img-fluid rounded shadow" alt="SG Menzingen">
+        </div>
+      </div>
+    </section>
+
+    <!-- Disziplinen -->
+    <section id="disciplines" class="mb-5">
+      <h2 class="fw-semibold">Disziplinen</h2>
+      <div class="row gy-4 mt-3">
+        <div class="col-md-6">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <h3 class="card-title">Sturmgewehr (Zentralfeuer)</h3>
+              <p class="card-text">Training in Präzision und Distanz. Geschulte Aufsicht, Sicherheitsbriefings und regelkonforme Abläufe.</p>
+              <a href="#contact" class="btn btn-dark btn-sm">Mehr erfahren / Kontakt</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <h3 class="card-title">Luftgewehr</h3>
+              <p class="card-text">Ideal für Einsteiger und Jugend – Technik, Atemführung und mentale Vorbereitung stehen im Vordergrund.</p>
+              <a href="#contact" class="btn btn-dark btn-sm">Schnuppertraining</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video -->
+    <section id="media" class="mb-5">
+      <h2 class="fw-semibold">Video</h2>
+      <p>Ein kurzer Clip über Training und Anlage:</p>
+      <div class="ratio ratio-16x9 shadow-sm rounded">
+        <!-- TODO: ERSETZE DEIN_VIDEO_ID -->
+        <iframe src="https://www.youtube.com/embed/DEIN_VIDEO_ID" title="SG Menzingen Video" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section id="contact" class="mb-5">
+      <h2 class="fw-semibold">Kontakt & Probetraining</h2>
+      <div class="row">
+        <div class="col-lg-6">
+          <p>Schreibe uns für Anfragen, Probetrainings oder Vereinsinformationen.</p>
+
+          <!-- TODO: ERSETZE DEN ACTION-URL MIT DEINER FORMSPREE-ID -->
+          <form action="https://formspree.io/f/DEINE_FORM_ID" method="POST" class="needs-validation" novalidate>
+            <div class="mb-3">
+              <label class="form-label">Name</label>
+              <input name="name" type="text" class="form-control" required>
+              <div class="invalid-feedback">Bitte Name eingeben.</div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">E-Mail</label>
+              <input name="email" type="email" class="form-control" required>
+              <div class="invalid-feedback">Bitte gültige E-Mail eingeben.</div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Nachricht</label>
+              <textarea name="message" rows="5" class="form-control"></textarea>
+            </div>
+            <button class="btn btn-dark" type="submit">Absenden</button>
+          </form>
+        </div>
+
+        <div class="col-lg-6">
+          <h5>Vereinsadresse</h5>
+          <p>Schützengesellschaft Menzingen<br>Beispielstrasse 1<br>6300 Menzingen</p>
+          <h5>Trainingszeiten</h5>
+          <p>Mittwoch 18:30–21:00 (Luftgewehr)<br>Samstag 09:00–12:00 (Sturmgewehr - nur Mitglieder / Anmeldung)</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center small">
+      © Schützengesellschaft Menzingen — Alle Rechte vorbehalten
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (Popper incl.) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Minimal client-side validation -->
+  <script>
+  (() => {
+    'use strict'
+    const forms = document.querySelectorAll('.needs-validation')
+    Array.from(forms).forEach(form => {
+      form.addEventListener('submit', event => {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+        form.classList.add('was-validated')
+      }, false)
+    })
+  })()
+  </script>
+
+</body>
+</html>
