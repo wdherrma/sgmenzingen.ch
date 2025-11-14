@@ -2,9 +2,9 @@
 <html lang="de-CH">
 <head>
   <meta charset="UTF-8">
-  <title>Schiessverein Beispielwil – Termine &amp; Anlässe</title>
+  <title>Schützenverein Menzingen – Termine &amp; Pflichtschiessen</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Termine, Trainingszeiten und Anlässe des Schiessvereins Beispielwil mit Filterfunktion.">
+  <meta name="description" content="Alle Termine des Schützenvereins Menzingen: obligatorisches Schiessen, Feldschiessen, Trainings und Luftgewehr-Montage in der Schürzenmatt.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -16,10 +16,10 @@
   <header class="site-header">
     <div class="container header-inner">
       <a href="index.html" class="logo" aria-label="Zur Startseite">
-        <div class="logo-mark" aria-hidden="true">SV</div>
+        <div class="logo-mark" aria-hidden="true">SM</div>
         <div class="logo-text">
-          <span class="logo-title">Schiessverein Beispielwil</span>
-          <span class="logo-subtitle">Seit 1925</span>
+          <span class="logo-title">Schützenverein Menzingen</span>
+          <span class="logo-subtitle">Tradition auf dem Zugerberg</span>
         </div>
       </a>
 
@@ -45,7 +45,7 @@
     <section class="page-hero">
       <div class="container">
         <h1>Termine &amp; Trainingszeiten</h1>
-        <p>Hier finden Sie eine Übersicht über geplante Trainings, Wettkämpfe und Vereinsanlässe.</p>
+        <p>Hier findest du die wichtigsten Daten für obligatorisches Schiessen, Feldschiessen, Vereinsanlässe und die Luftgewehr-Abende in der Schürzenmatt.</p>
       </div>
     </section>
 
@@ -54,100 +54,100 @@
         <!-- Filter/Tabs -->
         <div class="termine-filter" aria-label="Termine filtern">
           <button class="btn btn--filter btn--filter-active" type="button" data-filter="all">Alle</button>
-          <button class="btn btn--filter" type="button" data-filter="training">Training</button>
-          <button class="btn btn--filter" type="button" data-filter="wettkampf">Wettkampf</button>
+          <button class="btn btn--filter" type="button" data-filter="training">Training &amp; Luftgewehr</button>
+          <button class="btn btn--filter" type="button" data-filter="wettkampf">Obligatorisch &amp; Feldschiessen</button>
           <button class="btn btn--filter" type="button" data-filter="anlass">Vereinsanlass</button>
         </div>
 
-        <!-- Terminliste im Kartenlayout (Demo-Einträge) -->
+        <!-- Terminliste (Demo-Einträge) -->
         <div class="termine-grid" aria-live="polite">
-          <!-- Termin 1 -->
-          <article class="termin-card" data-category="training">
-            <div class="termin-date">
-              <span class="termin-day">12</span>
-              <span class="termin-month">Apr</span>
-            </div>
-            <div class="termin-content">
-              <h2>Abendtraining Gewehr 300m</h2>
-              <p class="termin-meta">
-                <span>Datum: 12.04.20XX</span>
-                <span>Uhrzeit: 18:30–20:30 Uhr</span>
-                <span>Ort: Schiessanlage Beispielwil</span>
-              </p>
-              <p>Reguläres Training für lizenzierte Schützinnen und Schützen. Jungschützen nach Absprache.</p>
-              <span class="termin-tag termin-tag--training">Training</span>
-            </div>
-          </article>
-
-          <!-- Termin 2 -->
-          <article class="termin-card" data-category="training">
-            <div class="termin-date">
-              <span class="termin-day">19</span>
-              <span class="termin-month">Apr</span>
-            </div>
-            <div class="termin-content">
-              <h2>Schnupperschiessen</h2>
-              <p class="termin-meta">
-                <span>Datum: 19.04.20XX</span>
-                <span>Uhrzeit: 14:00–16:00 Uhr</span>
-                <span>Ort: Schiessanlage Beispielwil</span>
-              </p>
-              <p>Offenes Schnupperschiessen für Interessierte ab 10 Jahren. Betreuung durch erfahrene Leitende.</p>
-              <span class="termin-tag termin-tag--training">Training</span>
-            </div>
-          </article>
-
-          <!-- Termin 3 -->
+          <!-- Termin 1: Obligatorisches Schiessen -->
           <article class="termin-card" data-category="wettkampf">
             <div class="termin-date">
-              <span class="termin-day">03</span>
+              <span class="termin-day">06</span>
+              <span class="termin-month">Apr</span>
+            </div>
+            <div class="termin-content">
+              <h2>Obligatorisches Schiessen Menzingen</h2>
+              <p class="termin-meta">
+                <span>Datum: 06.04.20XX</span>
+                <span>Uhrzeit: 09:00–11:30 Uhr</span>
+                <span>Ort: Schiessanlage Menzingen (300m, Schuss über die Strasse)</span>
+              </p>
+              <p>Du kannst dein obligatorisches Programm im Kanton Zug bei uns absolvieren. Bitte Ausweis und Dienstwaffe mitbringen.</p>
+              <span class="termin-tag termin-tag--wettkampf">Obligatorisch</span>
+            </div>
+          </article>
+
+          <!-- Termin 2: Feldschiessen -->
+          <article class="termin-card" data-category="wettkampf">
+            <div class="termin-date">
+              <span class="termin-day">18</span>
               <span class="termin-month">Mai</span>
             </div>
             <div class="termin-content">
-              <h2>Vereinsmeisterschaft</h2>
+              <h2>Feldschiessen Menzingen</h2>
               <p class="termin-meta">
-                <span>Datum: 03.05.20XX</span>
-                <span>Uhrzeit: 09:00–12:00 Uhr</span>
-                <span>Ort: Schiessanlage Beispielwil</span>
+                <span>Datum: 18.05.20XX</span>
+                <span>Uhrzeit: 13:30–16:30 Uhr</span>
+                <span>Ort: Schiessanlage Menzingen</span>
               </p>
-              <p>Jährliche Vereinsmeisterschaft mit anschliessender Rangverkündigung und gemütlichem Beisammensein.</p>
-              <span class="termin-tag termin-tag--wettkampf">Wettkampf</span>
+              <p>Das grösste Schützenfest der Schweiz – natürlich auch bei uns in Menzingen. Gäste aus dem ganzen Kanton Zug sind willkommen.</p>
+              <span class="termin-tag termin-tag--wettkampf">Feldschiessen</span>
             </div>
           </article>
 
-          <!-- Termin 4 -->
+          <!-- Termin 3: Luftgewehr Montag -->
+          <article class="termin-card" data-category="training">
+            <div class="termin-date">
+              <span class="termin-day">Jeden</span>
+              <span class="termin-month">Mo</span>
+            </div>
+            <div class="termin-content">
+              <h2>Luftgewehr-Abend in der Schürzenmatt</h2>
+              <p class="termin-meta">
+                <span>Datum: Jeden Montag (gültiger Zeitraum siehe Jahresprogramm)</span>
+                <span>Uhrzeit: 19:00–21:00 Uhr</span>
+                <span>Ort: Schürzenmatt, Menzingen</span>
+              </p>
+              <p>Offenes Luftgewehrschiessen für Jugendliche, Einsteigerinnen und erfahrene Schützinnen/Schützen. Bitte melde dich kurz über das <a href="kontakt.html">Kontaktformular</a> an.</p>
+              <span class="termin-tag termin-tag--training">Luftgewehr</span>
+            </div>
+          </article>
+
+          <!-- Termin 4: Vereinsanlass -->
           <article class="termin-card" data-category="anlass">
             <div class="termin-date">
-              <span class="termin-day">15</span>
+              <span class="termin-day">22</span>
               <span class="termin-month">Jun</span>
             </div>
             <div class="termin-content">
-              <h2>Sommergrillabend</h2>
+              <h2>Sommer-Grillabend im Schützenhaus</h2>
               <p class="termin-meta">
-                <span>Datum: 15.06.20XX</span>
-                <span>Uhrzeit: ab 18:00 Uhr</span>
-                <span>Ort: Vereinslokal Beispielwil</span>
+                <span>Datum: 22.06.20XX</span>
+                <span>Uhrzeit: ab 18:30 Uhr</span>
+                <span>Ort: Schützenhaus Menzingen</span>
               </p>
-              <p>Gemütlicher Grillabend für Mitglieder, Familien und Gönner. Anmeldung erwünscht.</p>
+              <p>Geselliger Sommerabend für Mitglieder, Familien, Gäste und Gönner mit Grill, Dessertbuffet und gemütlichem Beisammensein.</p>
               <span class="termin-tag termin-tag--anlass">Vereinsanlass</span>
             </div>
           </article>
 
-          <!-- Termin 5 -->
-          <article class="termin-card" data-category="wettkampf">
+          <!-- Termin 5: Training Sturmgewehr -->
+          <article class="termin-card" data-category="training">
             <div class="termin-date">
-              <span class="termin-day">28</span>
-              <span class="termin-month">Jun</span>
+              <span class="termin-day">11</span>
+              <span class="termin-month">Jul</span>
             </div>
             <div class="termin-content">
-              <h2>Regionaler Wettkampf</h2>
+              <h2>Abendtraining Sturmgewehr 300m</h2>
               <p class="termin-meta">
-                <span>Datum: 28.06.20XX</span>
-                <span>Uhrzeit: 08:30–15:00 Uhr</span>
-                <span>Ort: Schiessstand Musterwil</span>
+                <span>Datum: 11.07.20XX</span>
+                <span>Uhrzeit: 18:30–20:30 Uhr</span>
+                <span>Ort: Schiessanlage Menzingen</span>
               </p>
-              <p>Teilnahme am regionalen Wettkampf gemeinsam mit benachbarten Vereinen.</p>
-              <span class="termin-tag termin-tag--wettkampf">Wettkampf</span>
+              <p>Training für Aktive und Jungschützen mit Betreuung durch erfahrene Leitende. Ideale Vorbereitung für Wettkämpfe und Pflichtschiessen.</p>
+              <span class="termin-tag termin-tag--training">Training</span>
             </div>
           </article>
         </div>
@@ -158,9 +158,9 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-info">
-        <p class="footer-title">Schiessverein Beispielwil</p>
-        <p>Beispielstrasse 10, 6300 Beispielwil</p>
-        <p>&copy; <span id="footer-year"></span> Schiessverein Beispielwil. Alle Rechte vorbehalten.</p>
+        <p class="footer-title">Schützenverein Menzingen</p>
+        <p>Schützenhaus Schürzenmatt, 6313 Menzingen (Beispieladresse)</p>
+        <p>&copy; <span id="footer-year"></span> Schützenverein Menzingen. Alle Rechte vorbehalten.</p>
       </div>
       <div class="footer-links">
         <a href="#" class="footer-link">Impressum</a>
