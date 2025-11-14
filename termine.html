@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+  <meta charset="UTF-8">
+  <title>Schiessverein Beispielwil – Termine &amp; Anlässe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Termine, Trainingszeiten und Anlässe des Schiessvereins Beispielwil mit Filterfunktion.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Zur Startseite">
+        <div class="logo-mark" aria-hidden="true">SV</div>
+        <div class="logo-text">
+          <span class="logo-title">Schiessverein Beispielwil</span>
+          <span class="logo-subtitle">Seit 1925</span>
+        </div>
+      </a>
+
+      <button class="nav-toggle js-nav-toggle" aria-label="Navigation ein- und ausklappen" aria-expanded="false" aria-controls="main-navigation">
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+      </button>
+
+      <nav id="main-navigation" class="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Start</a></li>
+          <li><a href="verein.html" class="nav-link">Verein</a></li>
+          <li><a href="termine.html" class="nav-link nav-link--active">Termine</a></li>
+          <li><a href="goenner.html" class="nav-link">Gönner &amp; Fahne</a></li>
+          <li><a href="kontakt.html" class="nav-link">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <section class="page-hero">
+      <div class="container">
+        <h1>Termine &amp; Trainingszeiten</h1>
+        <p>Hier finden Sie eine Übersicht über geplante Trainings, Wettkämpfe und Vereinsanlässe.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <!-- Filter/Tabs -->
+        <div class="termine-filter" aria-label="Termine filtern">
+          <button class="btn btn--filter btn--filter-active" type="button" data-filter="all">Alle</button>
+          <button class="btn btn--filter" type="button" data-filter="training">Training</button>
+          <button class="btn btn--filter" type="button" data-filter="wettkampf">Wettkampf</button>
+          <button class="btn btn--filter" type="button" data-filter="anlass">Vereinsanlass</button>
+        </div>
+
+        <!-- Terminliste im Kartenlayout (Demo-Einträge) -->
+        <div class="termine-grid" aria-live="polite">
+          <!-- Termin 1 -->
+          <article class="termin-card" data-category="training">
+            <div class="termin-date">
+              <span class="termin-day">12</span>
+              <span class="termin-month">Apr</span>
+            </div>
+            <div class="termin-content">
+              <h2>Abendtraining Gewehr 300m</h2>
+              <p class="termin-meta">
+                <span>Datum: 12.04.20XX</span>
+                <span>Uhrzeit: 18:30–20:30 Uhr</span>
+                <span>Ort: Schiessanlage Beispielwil</span>
+              </p>
+              <p>Reguläres Training für lizenzierte Schützinnen und Schützen. Jungschützen nach Absprache.</p>
+              <span class="termin-tag termin-tag--training">Training</span>
+            </div>
+          </article>
+
+          <!-- Termin 2 -->
+          <article class="termin-card" data-category="training">
+            <div class="termin-date">
+              <span class="termin-day">19</span>
+              <span class="termin-month">Apr</span>
+            </div>
+            <div class="termin-content">
+              <h2>Schnupperschiessen</h2>
+              <p class="termin-meta">
+                <span>Datum: 19.04.20XX</span>
+                <span>Uhrzeit: 14:00–16:00 Uhr</span>
+                <span>Ort: Schiessanlage Beispielwil</span>
+              </p>
+              <p>Offenes Schnupperschiessen für Interessierte ab 10 Jahren. Betreuung durch erfahrene Leitende.</p>
+              <span class="termin-tag termin-tag--training">Training</span>
+            </div>
+          </article>
+
+          <!-- Termin 3 -->
+          <article class="termin-card" data-category="wettkampf">
+            <div class="termin-date">
+              <span class="termin-day">03</span>
+              <span class="termin-month">Mai</span>
+            </div>
+            <div class="termin-content">
+              <h2>Vereinsmeisterschaft</h2>
+              <p class="termin-meta">
+                <span>Datum: 03.05.20XX</span>
+                <span>Uhrzeit: 09:00–12:00 Uhr</span>
+                <span>Ort: Schiessanlage Beispielwil</span>
+              </p>
+              <p>Jährliche Vereinsmeisterschaft mit anschliessender Rangverkündigung und gemütlichem Beisammensein.</p>
+              <span class="termin-tag termin-tag--wettkampf">Wettkampf</span>
+            </div>
+          </article>
+
+          <!-- Termin 4 -->
+          <article class="termin-card" data-category="anlass">
+            <div class="termin-date">
+              <span class="termin-day">15</span>
+              <span class="termin-month">Jun</span>
+            </div>
+            <div class="termin-content">
+              <h2>Sommergrillabend</h2>
+              <p class="termin-meta">
+                <span>Datum: 15.06.20XX</span>
+                <span>Uhrzeit: ab 18:00 Uhr</span>
+                <span>Ort: Vereinslokal Beispielwil</span>
+              </p>
+              <p>Gemütlicher Grillabend für Mitglieder, Familien und Gönner. Anmeldung erwünscht.</p>
+              <span class="termin-tag termin-tag--anlass">Vereinsanlass</span>
+            </div>
+          </article>
+
+          <!-- Termin 5 -->
+          <article class="termin-card" data-category="wettkampf">
+            <div class="termin-date">
+              <span class="termin-day">28</span>
+              <span class="termin-month">Jun</span>
+            </div>
+            <div class="termin-content">
+              <h2>Regionaler Wettkampf</h2>
+              <p class="termin-meta">
+                <span>Datum: 28.06.20XX</span>
+                <span>Uhrzeit: 08:30–15:00 Uhr</span>
+                <span>Ort: Schiessstand Musterwil</span>
+              </p>
+              <p>Teilnahme am regionalen Wettkampf gemeinsam mit benachbarten Vereinen.</p>
+              <span class="termin-tag termin-tag--wettkampf">Wettkampf</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-info">
+        <p class="footer-title">Schiessverein Beispielwil</p>
+        <p>Beispielstrasse 10, 6300 Beispielwil</p>
+        <p>&copy; <span id="footer-year"></span> Schiessverein Beispielwil. Alle Rechte vorbehalten.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#" class="footer-link">Impressum</a>
+        <a href="#" class="footer-link">Datenschutz</a>
+      </div>
+      <div class="footer-social" aria-label="Soziale Medien">
+        <a href="#" class="social-link" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" class="social-icon" aria-hidden="true">
+            <circle cx="12" cy="12" r="11"></circle>
+          </svg>
+        </a>
+        <a href="#" class="social-link" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" class="social-icon" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="5" ry="5"></rect>
+          </svg>
+        </a>
+        <a href="#" class="social-link" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" class="social-icon" aria-hidden="true">
+            <rect x="3" y="7" width="18" height="10" rx="2" ry="2"></rect>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
