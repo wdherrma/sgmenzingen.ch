@@ -1,0 +1,170 @@
+<!-- kontakt.html -->
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+  <meta charset="UTF-8">
+  <title>Schützenverein Menzingen – Kontakt &amp; Anmeldung</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kontaktiere den Schützenverein Menzingen: Anmeldung für obligatorisches Schiessen, Feldschiessen, Jungschützenkurs oder Luftgewehr-Montag in der Schürzenmatt.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Zur Startseite">
+        <img src="assets/img/logo-sgm.jpg"
+             alt="Logo Schützengesellschaft Menzingen"
+             class="logo-image">
+        <div class="logo-text">
+          <span class="logo-title">Schützenverein Menzingen</span>
+          <span class="logo-subtitle">Tradition auf dem Zugerberg</span>
+        </div>
+      </a>
+
+      <button class="nav-toggle js-nav-toggle" aria-label="Navigation ein- und ausklappen" aria-expanded="false" aria-controls="main-navigation">
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+      </button>
+
+      <nav id="main-navigation" class="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Start</a></li>
+          <li><a href="verein.html" class="nav-link">Verein</a></li>
+          <li><a href="termine.html" class="nav-link">Termine</a></li>
+          <li><a href="goenner.html" class="nav-link">Gönner &amp; Fahne</a></li>
+          <li><a href="kontakt.html" class="nav-link nav-link--active">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <section class="page-hero">
+      <div class="container">
+        <h1>Kontakt &amp; Anmeldung</h1>
+        <p>Du möchtest dein obligatorisches Schiessen bei uns absolvieren, am Feldschiessen teilnehmen, in den Jungschützenkurs einsteigen oder montags Luftgewehr schiessen? Melde dich einfach bei uns.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container two-column two-column--stack">
+        <!-- Kontaktformular -->
+        <div>
+          <h2>Schreib uns eine Nachricht</h2>
+          <p>Wenn du magst, schreib im Feld «Betreff» kurz, worum es geht – zum Beispiel «Obligatorisches Schiessen», «Feldschiessen», «Jungschützenkurs» oder «Luftgewehr Schürzenmatt».</p>
+
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Name <span class="required">*</span></label>
+              <input type="text" id="name" name="name" autocomplete="name">
+              <p class="form-error" id="error-name" aria-live="polite"></p>
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-Mail <span class="required">*</span></label>
+              <input type="email" id="email" name="email" autocomplete="email">
+              <p class="form-error" id="error-email" aria-live="polite"></p>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Betreff</label>
+              <input type="text" id="subject" name="subject" placeholder="z. B. Obligatorium / Feldschiessen / Jungschützenkurs / Luftgewehr">
+              <p class="form-error" id="error-subject" aria-live="polite"></p>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Nachricht <span class="required">*</span></label>
+              <textarea id="message" name="message" rows="5" placeholder="Wie können wir dir weiterhelfen?"></textarea>
+              <p class="form-error" id="error-message" aria-live="polite"></p>
+            </div>
+
+            <button type="submit" class="btn btn--primary">Nachricht senden</button>
+            <p class="form-hint">Mit <span class="required">*</span> markierte Felder sind Pflichtfelder.</p>
+
+            <p class="form-success" id="form-success" aria-live="polite" hidden>
+              Vielen Dank für deine Nachricht. Wir melden uns so bald wie möglich.
+            </p>
+          </form>
+        </div>
+
+        <!-- Kontaktangaben & Kartenansicht -->
+        <div>
+          <h2>Adresse &amp; Standorte</h2>
+          <p><strong>Schützenverein Menzingen</strong></p>
+          <p>
+            Schiessanlage Chrüzegg<br>
+            Industriestrasse<br>
+            6313 Menzingen
+          </p>
+
+          <p>
+            E-Mail:
+            <a href="mailto:info@sv-menzingen.ch">info@sv-menzingen.ch</a><br>
+            Telefon:
+            <a href="tel:+41410000000">+41 41 000 00 00</a>
+          </p>
+
+          <h3>Schiessanlage &amp; Luftgewehr</h3>
+          <ul>
+            <li>300m-Schiessstand Chrüzegg (Schuss über die Strasse zum Zielhang)</li>
+            <li>Luftgewehranlage in der Schürzenmatt (Montagabend)</li>
+          </ul>
+
+          <h3>Anfahrt</h3>
+          <div class="map-placeholder" aria-label="Kartenansicht Schiessanlage Chrüzegg in Menzingen">
+            <!-- Google-Maps-Embed-Link hier einfügen -->
+            <!-- Tip: in Google Maps «Teilen» → «Karte einbetten» → HTML kopieren und src ersetzen -->
+            <iframe
+              src="https://www.google.com/maps/embed?pb=DEIN_GOOGLE_MAPS_EMBED_LINK"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Anfahrt zur Schiessanlage Chrüzegg in Menzingen">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-info">
+        <p class="footer-title">Schützenverein Menzingen</p>
+        <p>Schiessanlage Chrüzegg, Industriestrasse, 6313 Menzingen</p>
+        <p>&copy; <span id="footer-year"></span> Schützenverein Menzingen. Alle Rechte vorbehalten.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#" class="footer-link">Impressum</a>
+        <a href="#" class="footer-link">Datenschutz</a>
+      </div>
+      <div class="footer-social" aria-label="Soziale Medien">
+        <a href="#" class="social-link" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" class="social-icon" aria-hidden="true">
+            <circle cx="12" cy="12" r="11"></circle>
+          </svg>
+        </a>
+        <a href="#" class="social-link" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" class="social-icon" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="5" ry="5"></rect>
+          </svg>
+        </a>
+        <a href="#" class="social-link" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" class="social-icon" aria-hidden="true">
+            <rect x="3" y="7" width="18" height="10" rx="2" ry="2"></rect>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

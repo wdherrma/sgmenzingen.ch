@@ -1,0 +1,192 @@
+<!-- termine.html -->
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+  <meta charset="UTF-8">
+  <title>Schützenverein Menzingen – Termine &amp; Pflichtschiessen</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Alle Termine des Schützenvereins Menzingen: obligatorisches Schiessen, Feldschiessen, Trainings und Luftgewehr-Montage in der Schürzenmatt.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Zur Startseite">
+        <img src="assets/img/logo-sgm.jpg"
+             alt="Logo Schützengesellschaft Menzingen"
+             class="logo-image">
+        <div class="logo-text">
+          <span class="logo-title">Schützenverein Menzingen</span>
+          <span class="logo-subtitle">Tradition auf dem Zugerberg</span>
+        </div>
+      </a>
+
+      <button class="nav-toggle js-nav-toggle" aria-label="Navigation ein- und ausklappen" aria-expanded="false" aria-controls="main-navigation">
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+      </button>
+
+      <nav id="main-navigation" class="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Start</a></li>
+          <li><a href="verein.html" class="nav-link">Verein</a></li>
+          <li><a href="termine.html" class="nav-link nav-link--active">Termine</a></li>
+          <li><a href="goenner.html" class="nav-link">Gönner &amp; Fahne</a></li>
+          <li><a href="kontakt.html" class="nav-link">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <section class="page-hero">
+      <div class="container">
+        <h1>Termine &amp; Trainingszeiten</h1>
+        <p>Hier findest du die wichtigsten Daten für obligatorisches Schiessen, Feldschiessen, Vereinsanlässe und die Luftgewehr-Abende in der Schürzenmatt.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <!-- Filter/Tabs -->
+        <div class="termine-filter" aria-label="Termine filtern">
+          <button class="btn btn--filter btn--filter-active" type="button" data-filter="all" aria-pressed="true">Alle</button>
+          <button class="btn btn--filter" type="button" data-filter="training" aria-pressed="false">Training &amp; Luftgewehr</button>
+          <button class="btn btn--filter" type="button" data-filter="wettkampf" aria-pressed="false">Obligatorisch &amp; Feldschiessen</button>
+          <button class="btn btn--filter" type="button" data-filter="anlass" aria-pressed="false">Vereinsanlass</button>
+        </div>
+
+        <!-- Terminliste (Demo-Einträge) -->
+        <div class="termine-grid" aria-live="polite">
+          <!-- Termin 1: Obligatorisches Schiessen -->
+          <article class="termin-card" data-category="wettkampf">
+            <div class="termin-date">
+              <span class="termin-day">06</span>
+              <span class="termin-month">Apr</span>
+            </div>
+            <div class="termin-content">
+              <h2>Obligatorisches Schiessen Menzingen</h2>
+              <p class="termin-meta">
+                <span>Datum: 06.04.20XX</span>
+                <span>Uhrzeit: 09:00–11:30 Uhr</span>
+                <span>Ort: Schiessanlage Chrüzegg, Menzingen</span>
+              </p>
+              <p>Du kannst dein obligatorisches Programm im Kanton Zug bei uns absolvieren. Bitte Ausweis und Dienstwaffe mitbringen.</p>
+              <span class="termin-tag termin-tag--wettkampf">Obligatorisch</span>
+            </div>
+          </article>
+
+          <!-- Termin 2: Feldschiessen -->
+          <article class="termin-card" data-category="wettkampf">
+            <div class="termin-date">
+              <span class="termin-day">18</span>
+              <span class="termin-month">Mai</span>
+            </div>
+            <div class="termin-content">
+              <h2>Feldschiessen Menzingen</h2>
+              <p class="termin-meta">
+                <span>Datum: 18.05.20XX</span>
+                <span>Uhrzeit: 13:30–16:30 Uhr</span>
+                <span>Ort: Schiessanlage Chrüzegg, Menzingen</span>
+              </p>
+              <p>Das grösste Schützenfest der Schweiz – natürlich auch bei uns in Menzingen. Gäste aus dem ganzen Kanton Zug sind willkommen.</p>
+              <span class="termin-tag termin-tag--wettkampf">Feldschiessen</span>
+            </div>
+          </article>
+
+          <!-- Termin 3: Luftgewehr Montag -->
+          <article class="termin-card" data-category="training">
+            <div class="termin-date">
+              <span class="termin-day">Jeden</span>
+              <span class="termin-month">Mo</span>
+            </div>
+            <div class="termin-content">
+              <h2>Luftgewehr-Abend in der Schürzenmatt</h2>
+              <p class="termin-meta">
+                <span>Datum: Jeden Montag (gültiger Zeitraum gemäss Jahresprogramm)</span>
+                <span>Uhrzeit: 19:00–21:00 Uhr</span>
+                <span>Ort: Schürzenmatt, Menzingen</span>
+              </p>
+              <p>Offenes Luftgewehrschiessen für Jugendliche, Einsteigerinnen und erfahrene Schützinnen/Schützen. Bitte melde dich kurz über das <a href="kontakt.html">Kontaktformular</a> an.</p>
+              <span class="termin-tag termin-tag--training">Luftgewehr</span>
+            </div>
+          </article>
+
+          <!-- Termin 4: Vereinsanlass -->
+          <article class="termin-card" data-category="anlass">
+            <div class="termin-date">
+              <span class="termin-day">22</span>
+              <span class="termin-month">Jun</span>
+            </div>
+            <div class="termin-content">
+              <h2>Sommer-Grillabend im Schützenhaus</h2>
+              <p class="termin-meta">
+                <span>Datum: 22.06.20XX</span>
+                <span>Uhrzeit: ab 18:30 Uhr</span>
+                <span>Ort: Schützenhaus Chrüzegg</span>
+              </p>
+              <p>Geselliger Sommerabend für Mitglieder, Familien, Gäste und Gönner mit Grill, Dessertbuffet und gemütlichem Beisammensein.</p>
+              <span class="termin-tag termin-tag--anlass">Vereinsanlass</span>
+            </div>
+          </article>
+
+          <!-- Termin 5: Training Sturmgewehr -->
+          <article class="termin-card" data-category="training">
+            <div class="termin-date">
+              <span class="termin-day">11</span>
+              <span class="termin-month">Jul</span>
+            </div>
+            <div class="termin-content">
+              <h2>Abendtraining Sturmgewehr 300m</h2>
+              <p class="termin-meta">
+                <span>Datum: 11.07.20XX</span>
+                <span>Uhrzeit: 18:30–20:30 Uhr</span>
+                <span>Ort: Schiessanlage Chrüzegg, Menzingen</span>
+              </p>
+              <p>Training für Aktive und Jungschützen mit Betreuung durch erfahrene Leitende. Ideale Vorbereitung für Wettkämpfe und Pflichtschiessen.</p>
+              <span class="termin-tag termin-tag--training">Training</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-info">
+        <p class="footer-title">Schützenverein Menzingen</p>
+        <p>Schiessanlage Chrüzegg, Industriestrasse, 6313 Menzingen</p>
+        <p>&copy; <span id="footer-year"></span> Schützenverein Menzingen. Alle Rechte vorbehalten.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#" class="footer-link">Impressum</a>
+        <a href="#" class="footer-link">Datenschutz</a>
+      </div>
+      <div class="footer-social" aria-label="Soziale Medien">
+        <a href="#" class="social-link" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" class="social-icon" aria-hidden="true">
+            <circle cx="12" cy="12" r="11"></circle>
+          </svg>
+        </a>
+        <a href="#" class="social-link" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" class="social-icon" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="5" ry="5"></rect>
+          </svg>
+        </a>
+        <a href="#" class="social-link" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" class="social-icon" aria-hidden="true">
+            <rect x="3" y="7" width="18" height="10" rx="2" ry="2"></rect>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
